@@ -58,7 +58,7 @@ export class APIClient {
     return todos.filter(todo => todo.userId === userId);
   }
 
-  // ✅ New: Fetch users and todos concurrently using Promise.all
+  //  New: Fetch users and todos concurrently using Promise.all
   async fetchUsersAndTodosConcurrently() {
     try {
       // Run both fetches at the same time
