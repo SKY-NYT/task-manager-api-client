@@ -1,7 +1,7 @@
 // api.js
 export class APIClient {
   constructor() {
-    // 🔒 private cached fetchers using closures
+    //  private cached fetchers using closures
     this._fetchUsers = this._createCachedFetcher(
       'https://jsonplaceholder.typicode.com/users'
     );
@@ -11,7 +11,7 @@ export class APIClient {
     );
   }
 
-  // 🔐 higher-order function that returns a cached async fetcher
+  //  higher-order function that returns a cached async fetcher
   _createCachedFetcher(url) {
     let cache = null; // closure remembers this
     return async () => {
@@ -31,7 +31,7 @@ export class APIClient {
     };
   }
 
-  // ✅ Cached async/await versions
+  //  Cached async/await versions
   fetchUsers() {
     return this._fetchUsers();
   }
@@ -40,7 +40,7 @@ export class APIClient {
     return this._fetchTodos();
   }
 
-  // ✅ Promise-based version (optional)
+  //  Promise-based version (optional)
   fetchUsersPromise() {
     return fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => {

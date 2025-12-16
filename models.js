@@ -25,7 +25,7 @@ export class User {
     this.tasks = [];
   }
 
-  // ✅ Updated to accept multiple tasks using rest parameters
+  // Updated to accept multiple tasks using rest parameters
   addTask(...tasks) {
     this.tasks.push(...tasks);
   }
