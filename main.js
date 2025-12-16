@@ -63,15 +63,8 @@ async function main() {
           });
           showMenu();
           break;
+        
         case '4':
-          rl.question('Enter search keyword: ', keyword => {
-            const results = processor.searchTasks(tasks, keyword);
-            console.log(`\nTasks matching "${keyword}":`);
-            results.forEach(t => console.log(`- ${t.title} (User ${t.userId})`));
-            showMenu();
-          });
-          break;
-        case '5':
           console.log('Exiting CLI...');
           rl.close();
           break;
