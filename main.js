@@ -35,8 +35,7 @@ async function main() {
       console.log('1. List all tasks');
       console.log('2. List tasks by status');
       console.log('3. Show user statistics');
-      console.log('4. Search tasks by keyword');
-      console.log('5. Exit');
+      console.log('4. Exit');
       rl.question('Choose an option: ', handleMenu);
     }
 
