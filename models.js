@@ -1,11 +1,11 @@
-// models.js
+
 export class Task {
   constructor({ id, title, completed, userId }) {
     Object.assign(this, { id, title, completed, userId });
   }
 
   toggle() { this.completed = !this.completed; }
-  isOverdue() { return false; } // placeholder
+  isOverdue() { return false; } 
   getStatus() { return this.completed ? 'Completed' : 'Pending'; }
 }
 
@@ -25,7 +25,6 @@ export class User {
     this.tasks = [];
   }
 
-  // Updated to accept multiple tasks using rest parameters
   addTask(...tasks) {
     this.tasks.push(...tasks);
   }

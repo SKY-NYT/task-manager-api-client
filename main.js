@@ -8,7 +8,6 @@ const api = new APIClient();
 
 async function main() {
   try {
-    // Fetch users and todos concurrently
     const [usersData, todosData] = await Promise.all([
       api.fetchUsers(),
       api.fetchTodos()
@@ -63,6 +62,7 @@ async function main() {
           });
           showMenu();
           break;
+        
         case '4':
           rl.question('Enter search keyword: ', keyword => {
             const results = processor.searchTasks(tasks, keyword);
