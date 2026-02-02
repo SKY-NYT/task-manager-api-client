@@ -151,6 +151,13 @@ table.coverage td span.cline-any {
 .coverage-summary .sorted-desc .sorter {
     background-position: 0 -10px;
 }
+.cover-fillcover-full{
+  width: 100%
+}
+.cover-empty{
+  width: 0%
+}
+
 .status-line {  height: 10px; }
 /* yellow */
 .cbranch-no { background: yellow !important; color: #111; }
