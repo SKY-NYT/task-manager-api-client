@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1770112537256" clover="3.2.0">
-  <project timestamp="1770112537256" name="All files">
+<coverage generated="1770114333387" clover="3.2.0">
+  <project timestamp="1770114333387" name="All files">
     <metrics statements="67" coveredstatements="65" conditionals="24" coveredconditionals="24" methods="34" coveredmethods="34" elements="125" coveredelements="123" complexity="0" loc="67" ncloc="67" packages="1" files="3" classes="3"/>
     <file name="api.js" path="C:\Users\KofiFrimpongOsei\Desktop\task-manager-api-client\api.js">
       <metrics statements="29" coveredstatements="27" conditionals="6" coveredconditionals="6" methods="11" coveredmethods="11"/>
       <line num="5" count="9" type="stmt"/>
       <line num="9" count="9" type="stmt"/>
+      <line num="15" count="18" type="stmt"/>
       <line num="16" count="18" type="stmt"/>
-      <line num="17" count="18" type="stmt"/>
-      <line num="18" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="1" type="stmt"/>
       <line num="19" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="10" type="stmt"/>
       <line num="22" count="10" type="stmt"/>
-      <line num="23" count="10" type="stmt"/>
-      <line num="24" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="6" type="stmt"/>
       <line num="25" count="6" type="stmt"/>
-      <line num="26" count="6" type="stmt"/>
+      <line num="27" count="4" type="stmt"/>
       <line num="28" count="4" type="stmt"/>
-      <line num="29" count="4" type="stmt"/>
-      <line num="36" count="6" type="stmt"/>
-      <line num="40" count="5" type="stmt"/>
-      <line num="45" count="2" type="stmt"/>
-      <line num="47" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="48" count="1" type="stmt"/>
+      <line num="35" count="6" type="stmt"/>
+      <line num="39" count="5" type="stmt"/>
+      <line num="44" count="2" type="stmt"/>
+      <line num="46" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
       <line num="51" count="1" type="stmt"/>
-      <line num="52" count="1" type="stmt"/>
-      <line num="57" count="2" type="stmt"/>
-      <line num="58" count="3" type="stmt"/>
-      <line num="63" count="1" type="stmt"/>
+      <line num="56" count="2" type="stmt"/>
+      <line num="57" count="3" type="stmt"/>
+      <line num="62" count="1" type="stmt"/>
+      <line num="64" count="1" type="stmt"/>
       <line num="65" count="1" type="stmt"/>
       <line num="66" count="1" type="stmt"/>
-      <line num="67" count="1" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
       <line num="69" count="0" type="stmt"/>
-      <line num="70" count="0" type="stmt"/>
     </file>
     <file name="models.js" path="C:\Users\KofiFrimpongOsei\Desktop\task-manager-api-client\models.js">
       <metrics statements="14" coveredstatements="14" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12"/>

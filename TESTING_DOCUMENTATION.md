@@ -20,9 +20,10 @@ My approach to testing followed the **Testing Pyramid** strategy. I focused heav
 * **Spies:** Used `jest.spyOn(console, 'error')` to verify that the system correctly logs network failures without crashing.
 
 ## 3. Test Coverage Analysis
-* **Overall Statement Coverage:** [Insert your 97.43% here]%
-* **Branch Coverage:** [Insert your 100% here]%
+* **Overall Statement Coverage:**97.43%
+* **Branch Coverage:**  93.75%
 * **Analysis:** I achieved significantly higher than the required 80% coverage. 
+
 * **Uncovered Lines:** Lines 69-70 in `api.js` are intentionally left uncovered as they represent a redundant catch-all for the concurrent promise logic which is already partially verified by individual fetch tests.
 
 ## 4. Challenges & Solutions
