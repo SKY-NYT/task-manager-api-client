@@ -1,7 +1,7 @@
-// api.js
+
 export class APIClient {
   constructor() {
-    // private cached fetchers using closures
+
     this._fetchUsers = this._createCachedFetcher(
       'https://jsonplaceholder.typicode.com/users'
     );
@@ -11,9 +11,8 @@ export class APIClient {
     );
   }
 
-  // higher-order function that returns a cached async fetcher
   _createCachedFetcher(url) {
-    let cache = null; // closure remembers this
+    let cache = null; 
     return async () => {
       if (cache) {
         console.log(`Using cached data for ${url}`);
@@ -22,7 +21,7 @@ export class APIClient {
       try {
         const res = await fetch(url);
         if (!res.ok) throw new Error(`Fetch failed for ${url}`);
-        cache = await res.json(); // store in closure
+        cache = await res.json();
         return cache;
       } catch (err) {
         console.error(err.message);
@@ -31,7 +30,7 @@ export class APIClient {
     };
   }
 
-  // Cached async/await versions
+  
   fetchUsers() {
     return this._fetchUsers();
   }
@@ -40,7 +39,7 @@ export class APIClient {
     return this._fetchTodos();
   }
 
-  // Promise-based version (optional)
+
   fetchUsersPromise() {
     return fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => {
@@ -58,10 +57,10 @@ export class APIClient {
     return todos.filter(todo => todo.userId === userId);
   }
 
-  //  New: Fetch users and todos concurrently using Promise.all
+ 
   async fetchUsersAndTodosConcurrently() {
     try {
-      // Run both fetches at the same time
+  
       const [users, todos] = await Promise.all([this.fetchUsers(), this.fetchTodos()]);
       console.log('Fetched users and todos concurrently');
       return { users, todos };
