@@ -58,11 +58,11 @@ describe('Data Flow Integration Tests', () => {
       json: async () => mockRawTodos,
     });
 
-    // 2. Act
+    
     const rawData = await apiClient.fetchTodos();
     const groupedMap = groupByUser(rawData);
 
-    // 3. Assert
+    
     expect(groupedMap).toBeInstanceOf(Map);
     expect(groupedMap.get(10)).toHaveLength(2);
     expect(groupedMap.get(20)).toHaveLength(1);
