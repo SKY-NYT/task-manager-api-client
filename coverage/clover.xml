@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1770114333387" clover="3.2.0">
-  <project timestamp="1770114333387" name="All files">
+<coverage generated="1770116208190" clover="3.2.0">
+  <project timestamp="1770116208190" name="All files">
     <metrics statements="67" coveredstatements="65" conditionals="24" coveredconditionals="24" methods="34" coveredmethods="34" elements="125" coveredelements="123" complexity="0" loc="67" ncloc="67" packages="1" files="3" classes="3"/>
     <file name="api.js" path="C:\Users\KofiFrimpongOsei\Desktop\task-manager-api-client\api.js">
       <metrics statements="29" coveredstatements="27" conditionals="6" coveredconditionals="6" methods="11" coveredmethods="11"/>
