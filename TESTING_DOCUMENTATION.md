@@ -38,9 +38,3 @@ My approach to testing followed the **Testing Pyramid** strategy. I focused heav
 * **Defensive Coding:** Writing tests for "Uncovered Lines" helped me realize where I needed to add `try/catch` blocks to prevent the app from crashing.
 * **Test Isolation:** Learned the importance of resetting mocks and modules so that one test doesn't accidentally "help" or "break" another.
 
-## 6. Differences Between Test Types
-| Type | Scope | Mocking Level |
-| :--- | :--- | :--- |
-| **Unit** | Individual function/class | High (all dependencies mocked) |
-| **Integration** | Interaction between 2+ modules | Medium (only external APIs mocked) |
-| **E2E** | The entire application flow | Low (uses real database/API) |
